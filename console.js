@@ -1,0 +1,1 @@
+console.log('Cieszę się, że interesuje Cię frontend!');

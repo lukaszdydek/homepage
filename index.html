@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strona główna</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Strona główna</a>
+        <a href="tworzenie_html.html">Tworzenie HTML</a>
+        <a href="tłumaczenie.html">Tłumaczenie</a>
+        <a href="korekta.html">Korekta</a>
+        <a href="proofreading.html">Proofreading</a>
+        <a href="smartfony.html">Smartfony</a>
+        <a href="budowa_drog.html">Budowa dróg</a>
+        <a href="telewizja_cyfrowa.html">Telewizja cyfrowa</a>
+    </header>
+    <main>
+        <header>
+            <h1 class="mainHeader">
+                Łukasz Dydek &mdash; strona główna
+            </h1>
+        </header>
+        <section>
+            <h2 class="sectionHeader">
+                O mnie
+            </h2>
+            <p>
+                Zapraszam do odwiedzenia mojej witryny. Znajdziesz tu wszelkie informacje na temat mojej działalności i
+                świadczonych przeze mnie usług. Nazywam się <b>Łukasz Dydek</b> i zapraszam do zapoznania się z ofertą.
+                Prowadzę własną działalność pod nazwą <strong>Language Service Łukasz Dydek</strong>.
+                Poszczególne informacje są dostępne po kliknięciu odpowiednich pozycji menu po lewej stronie. Jeżeli
+                chcesz przejść do stopki, kliknij <a href="#stopka">tutaj</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="sectionHeader">
+                Pamiętniczek
+            </h2>
+            <section>
+                <h3>Jak stworzyć prawidłowego HTML-a?</h3>
+                <p>
+                    Stworzenie prawidłowgo <i>HTML-a</i> nie jest tak proste jakby się wydawało. Trzeba <em>dużo nauki,
+                        cierpliwości,
+                        czasu i samozaparcia</em>. Ale jak powiadają: &quot;bez pracy nie ma kołaczy&quot;.<br>
+                    <a href="tworzenie_html.html">Przejdź do artykułu</a>
+                </p>
+            </section>
+            <section>
+                <h3>Czy tłumaczenie tekstów to prosta sprawa?</h3>
+                <p>
+                    Do tłumaczenia trzeba sporo cierpliwości i dokładności. <a href="tłumaczenie.html">Poznaj
+                        dziedzinę tłumaczeń</a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Czy korekta tekstów jest naprawdę tak nudna?</h3>
+                <p>
+                    Korekta tekstów nie wydaje się ciekawym zajęciem. <a href="korekta.html">Przekonaj się</a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Czy proofreading niesie ze sobą dużą odpowiedzialność?</h3>
+                <p>
+                    Proofreading to ostatnia faza sprawdzania tekstu przed oddaniem go do druku. <a
+                        href="proofreading.html">Sprawdź, co ryzykuje proofreader.</a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Czy smarfony mogą być interesujące?</h3>
+                <p>
+                    Od wielu lat interesuje mnie elektronika użytkowa. <a href="smartfony.html">Zobacz, co wiem o
+                        smarfonach.</a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Co ciekawego jest w śledzeniu postępów budowy dróg?</h3>
+                <p>
+                    Od kiedy w Polsce zaczął się boom na budowę dróg szybkiego ruchu nieustannie śledzę ten temat. <a
+                        href="budowa_drog.html">Sprawdź, czy to interesująca dziedzina.</a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Co wiesz o cyfryzacji radia i telewizji?</h3>
+                <p>
+                    Cyfryzacja radia i telewizji to jedno z moich zainteresowań. <a
+                        href="telewizja_cyfrowa.html">Zobacz, czy ten temat zainteresuje i Ciebie.</a>
+                </p>
+            </section>
+
+            <section id="ukryty">
+            </section>
+        </section>
+        <br />
+    </main>
+    <footer id="stopka">
+        Strona domowa Łukasz Dydka &mdash; wszystkie treści są tworzone w ramach szkolenia WTF: Co ten Frontend
+    </footer>
+    <br />
+    <input type="button" value="Dodatkowe informacje" onclick="pokaz();ukryj();" />
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

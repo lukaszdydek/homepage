@@ -1,0 +1,14 @@
+body {
+    background-color: #fefefe
+}
+
+.articleHeader {
+    color: #1460AA;
+    font-size: 1.5em
+}
+
+.mainHeader {
+    color: crimson !important;
+    /* Nie stosować importanta. Ważność (specyficzność) identyfikatorów stylowania: !important, <style="">, #id, .class, element {parametr: nastawa;}    id do nawigacji, class do stylowania*/
+    /* Aby stylować strony we wszystkich podkatalogach zastosuj składnię href="../style.css"*/
+}
