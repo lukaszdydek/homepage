@@ -2,13 +2,25 @@ body {
     background-color: lightseagreen; 
 }
 
+.mainHeader {
+    color: #7401DF;
+    /* Nie stosować importanta. Ważność (specyficzność) identyfikatorów stylowania: !important, <style="">, #id, .class, element {parametr: nastawa;}    id do nawigacji, class do stylowania*/
+    /* Aby stylować strony we wszystkich podkatalogach zastosuj składnię href="../style.css"*/
+}
+
+.mainSectionHeader {
+    color: #8904B1;
+}
+
+.sectionHeader {
+    color: #2E64FE;
+}
+
 .articleHeader {
     color: #1460AA;
     font-size: 1.5em
 }
 
-.mainHeader {
-    color: crimson !important;
-    /* Nie stosować importanta. Ważność (specyficzność) identyfikatorów stylowania: !important, <style="">, #id, .class, element {parametr: nastawa;}    id do nawigacji, class do stylowania*/
-    /* Aby stylować strony we wszystkich podkatalogach zastosuj składnię href="../style.css"*/
+.link {
+    color:#0B0B61;
 }
