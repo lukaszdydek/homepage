@@ -12,108 +12,129 @@
 </head>
 
 <body>
-    <header>
-        <a class="link" href="index.html">Strona główna</a>
-        <a class="link" href="tworzenie_html.html">Tworzenie HTML</a>
-        <a class="link" href="tłumaczenie.html">Tłumaczenie</a>
-        <a class="link" href="korekta.html">Korekta</a>
-        <a class="link" href="proofreading.html">Proofreading</a>
-        <a class="link" href="smartfony.html">Smartfony</a>
-        <a class="link" href="budowa_drog.html">Budowa dróg</a>
-        <a class="link" href="telewizja_cyfrowa.html">Telewizja cyfrowa</a>
+    <header class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="tworzenie_html.html">Tworzenie HTML</a>
+        <a class="navigation__link" href="tłumaczenie.html">Tłumaczenie</a>
+        <a class="navigation__link" href="korekta.html">Korekta</a>
+        <a class="navigation__link" href="proofreading.html">Proofreading</a>
+        <a class="navigation__link" href="smartfony.html">Smartfony</a>
+        <a class="navigation__link" href="budowa_drog.html">Budowa dróg</a>
+        <a class="navigation__link" href="telewizja_cyfrowa.html">Telewizja cyfrowa</a>
     </header>
-    <main>
+    <main class="main">
         <header>
-            <h1 class="mainHeader">
+            <h1 class="main__header">
                 Łukasz Dydek &mdash; strona główna
             </h1>
         </header>
-        <section>
-            <h2 class="mainSectionHeader">
+        <section class="about">
+            <h2 class="about__header">
                 O mnie
             </h2>
-            <p>
+            <img src="zdjecie4.jpg" class="about_photo"></img>
+            <p class="about__paragraph">
                 Zapraszam do odwiedzenia mojej witryny. Znajdziesz tu wszelkie informacje na temat mojej działalności i
                 świadczonych przeze mnie usług. Nazywam się <b>Łukasz Dydek</b> i zapraszam do zapoznania się z ofertą.
                 Prowadzę własną działalność pod nazwą <strong>Language Service Łukasz Dydek</strong>.
                 Poszczególne informacje są dostępne po kliknięciu odpowiednich pozycji menu po lewej stronie. Jeżeli
-                chcesz przejść do stopki, kliknij <a class="link" href="#stopka">tutaj</a>.
+                chcesz przejść do stopki, kliknij <a class="about__link" href="#footer">tutaj</a>.
             </p>
+            <p class="about__paragraph about__paragraph--color">
+                Kolejny akapit, aby pokazać, dlaczego dublujemy nazwę elementu w modelu BEM.
+            </p>
+
+            <p class="about__paragraph--pusty">
+                
+            </p>
+
         </section>
 
         <section>
-            <h2 class="mainSectionHeader">
+            <h2 class="days">
                 Pamiętniczek
             </h2>
-            <section>
-                <h3 class="sectionHeader">Jak stworzyć prawidłowego HTML-a?</h3 class="sectionHeader">
-                <p>
+            <section class="day">
+                <h3 class="day__header">Jak stworzyć prawidłowego HTML-a?</h3>
+                <p class="day__paragraph">
                     Stworzenie prawidłowgo <i>HTML-a</i> nie jest tak proste jakby się wydawało. Trzeba <em>dużo nauki,
                         cierpliwości,
                         czasu i samozaparcia</em>. Ale jak powiadają: &quot;bez pracy nie ma kołaczy&quot;.<br>
-                    <a class="link" href="tworzenie_html.html">Przejdź do artykułu</a>
+                    <a class="day__link" href="tworzenie_html.html">Przejdź do artykułu</a>
                 </p>
             </section>
-            <section>
-                <h3 class="sectionHeader">Czy tłumaczenie tekstów to prosta sprawa?</h3 class="sectionHeader">
-                <p>
-                    Do tłumaczenia trzeba sporo cierpliwości i dokładności. <a class="link" href="tłumaczenie.html">Poznaj
+
+            <section class="day">
+                <h3 class="day__header">Czy tłumaczenie tekstów to prosta sprawa?</h3>
+                <p class="day__paragraph">
+                    Do tłumaczenia trzeba sporo cierpliwości i dokładności. <a class="day__link"
+                        href="tłumaczenie.html">Poznaj
                         dziedzinę tłumaczeń</a>
                 </p>
             </section>
 
-            <section>
-                <h3 class="sectionHeader">Czy korekta tekstów jest naprawdę tak nudna?</h3 class="sectionHeader">
-                <p>
-                    Korekta tekstów nie wydaje się ciekawym zajęciem. <a class="link" href="korekta.html">Przekonaj się</a>
+            <section class="day">
+                <h3 class="day__header">Czy korekta tekstów jest naprawdę tak nudna?</h3>
+                <p class="day__paragraph">
+                    Korekta tekstów nie wydaje się ciekawym zajęciem. <a class="day__link" href="korekta.html">Przekonaj
+                        się</a>
                 </p>
             </section>
 
-            <section>
-                <h3 class="sectionHeader">Czy proofreading niesie ze sobą dużą odpowiedzialność?</h3 class="sectionHeader">
-                <p>
-                    Proofreading to ostatnia faza sprawdzania tekstu przed oddaniem go do druku. <a class="link"
+            <section class="day">
+                <h3 class="day__header">Czy proofreading niesie ze sobą dużą odpowiedzialność?</h3>
+                <p class="day__paragraph">
+                    Proofreading to ostatnia faza sprawdzania tekstu przed oddaniem go do druku. <a class="day__link"
                         href="proofreading.html">Sprawdź, co ryzykuje proofreader.</a>
                 </p>
             </section>
 
-            <section>
-                <h3 class="sectionHeader">Czy smarfony mogą być interesujące?</h3 class="sectionHeader">
-                <p>
-                    Od wielu lat interesuje mnie elektronika użytkowa. <a class="link" href="smartfony.html">Zobacz, co wiem o
+            <section class="day">
+                <h3 class="day__header">Czy smarfony mogą być interesujące?</h3>
+                <p class="day__paragraph">
+                    Od wielu lat interesuje mnie elektronika użytkowa. <a class="day__link"
+                        href="smartfony.html">Zobacz, co wiem o
                         smarfonach.</a>
                 </p>
             </section>
 
-            <section>
-                <h3 class="sectionHeader">Co ciekawego jest w śledzeniu postępów budowy dróg?</h3 class="sectionHeader">
-                <p>
-                    Od kiedy w Polsce zaczął się boom na budowę dróg szybkiego ruchu nieustannie śledzę ten temat. <a class="link"
-                        href="budowa_drog.html">Sprawdź, czy to interesująca dziedzina.</a>
+            <section class="day">
+                <h3 class="day__header">Co ciekawego jest w śledzeniu postępów budowy dróg?</h3>
+                <p class="day__paragraph">
+                    Od kiedy w Polsce zaczął się boom na budowę dróg szybkiego ruchu nieustannie śledzę ten temat. <a
+                        class="day__link" href="budowa_drog.html">Sprawdź, czy to interesująca dziedzina.</a>
                 </p>
             </section>
 
-            <section>
-                <h3 class="sectionHeader">Co wiesz o cyfryzacji radia i telewizji?</h3 class="sectionHeader">
-                <p>
-                    Cyfryzacja radia i telewizji to jedno z moich zainteresowań. <a class="link"
+            <section class="day">
+                <h3 class="day__header">Co wiesz o cyfryzacji radia i telewizji?</h3>
+                <p class="day__paragraph">
+                    Cyfryzacja radia i telewizji to jedno z moich zainteresowań. <a class="day__link"
                         href="telewizja_cyfrowa.html">Zobacz, czy ten temat zainteresuje i Ciebie.</a>
                 </p>
             </section>
+
+
+
 
             <section id="ukryty">
             </section>
         </section>
         <br />
     </main>
-    <footer id="stopka">
+
+    <footer id="footer">
         Strona domowa Łukasz Dydka &mdash; wszystkie treści są tworzone w ramach szkolenia WTF: Co ten Frontend
     </footer>
+
+
     <br />
     <input type="button" value="Dodatkowe informacje" onclick="pokaz();ukryj();" />
 
 </body>
 
 <script src="main.js"></script>
+
+<script src="console.js"></script>
 
 </html>
