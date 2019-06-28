@@ -7,11 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Korekta</title>
 
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-    <header class="navigation">
+        <div class="menuButton__container">
+                <button class="menuButton" type="menu">&#9776;</button>
+                    </div>
+    <nav class="navigation__base">
         <a class="navigation__link" href="index.html">Strona główna</a>
         <a class="navigation__link" href="tworzenie_html.html">Tworzenie HTML</a>
         <a class="navigation__link" href="tłumaczenie.html">Tłumaczenie</a>
@@ -20,7 +24,7 @@
         <a class="navigation__link" href="smartfony.html">Smartfony</a>
         <a class="navigation__link" href="budowa_drog.html">Budowa dróg</a>
         <a class="navigation__link" href="telewizja_cyfrowa.html">Telewizja cyfrowa</a>
-    </header>
+    </nav>
     <main class="main">
         <header>
             <h1 class="main__header">Czy korektor ma naprawdę tak nudną pracę?</h1>
@@ -43,11 +47,12 @@
 
     </main>
 
-    <footer id="stopka">
+    <footer class="footer">
         Strona domowa Łukasz Dydka &mdash; wszystkie treści są tworzone w ramach szkolenia WTF: Co ten Frontend
     </footer>
     <script src="console.js">
     </script>
+    <script src="hamburger.js"></script>
 </body>
 
 </html>

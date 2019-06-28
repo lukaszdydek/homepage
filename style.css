@@ -1,25 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+
+/* normalizacja*/
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+/* normalizacja*/
+
 body {
-    background-color: lightseagreen;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(148deg, rgba(2, 0, 36, 1) 0%, rgba(131, 86, 177, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    background-attachment: fixed;
+    margin: 0;
 }
 
 .main {
     max-width: 900px;
-    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px auto;
 }
 
-.navigation {
-    max-width: 100%;
+.navigation__base {
     padding: 10px;
-    margin: 0px auto;
-    text-align: center;
-    background-color: rgb(116, 127, 179);
-
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(116, 127, 179, 1);
 }
 
 .navigation__link {
     font: 18px Sans lightgray;
+    text-align: center;
     text-decoration: none;
     padding: 8px;
+    flex-shrink: 1;
+}
+
+.navigation__link:hover {
+    color: antiquewhite;
+    background-color: #1460AA;
 }
 
 .main__header {
@@ -38,11 +63,12 @@ body {
 
 .about_photo {
     float: left;
-    max-width: 90px;
+    max-width: 97px;
     margin-right: 12px;
 }
 
 .about__paragraph {
+    line-height: 24px;
     padding-left: 5px;
     border-left: 5px solid red;
     border-radius: 0px;
@@ -85,3 +111,71 @@ body {
 .article__footer {}
 
 .article__footer--photo {}
+
+.footer {
+    display: block;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+@media screen and (min-width: 961px) {
+    .main {
+        max-width: 1000px;
+    }
+    .menuButton__container {
+        display: none;
+    }
+    .menuButton {
+        display: none;
+    }
+    .navigation__base {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navigation__link {
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 960px) {
+    main {}
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .day__header {
+        color: yellowgreen;
+        font-size: 2em;
+    }
+    .menuButton__container {
+        background-color: rgba(116, 127, 179, 1);
+    }
+    .menuButton {
+        color: lightgray;
+        border: none;
+        background: none;
+        font-size: 2em;
+    }
+    .navigation__base {
+        display: none;
+    }
+    .navigation__link {
+        flex-shrink: 2;
+    }
+    .navigation__mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+}
+
+/* Poniżej 655px wyświetlana będzie 1 kolumna zamiast dwóch - dostosowanie do nośnika = media (np. smartfon)*/
