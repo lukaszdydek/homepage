@@ -55,30 +55,48 @@ body {
 }
 
 .about {
+    display: grid;
+   
+    
+    
+   
     /* Taka konfiguracja parametrów width i max-width umożliwia stworzenie podstawowej resposywności, jeśli chodzi o                                wielkość ekranu. vw - viewport width vh - viewport height; elementy zdefiniowane z użyciem obu jednostek zmieniają                           się dynamicznie przy skalowaniu okna przeglądarki; nie warto ich używać jednak do wszystkiego */
 }
 
 .about__header {
     color: gray;
+    grid-area: 1;
+
 }
 
 .about_photo {
-    float: left;
+    grid-area: 2;
     max-width: 97px;
     margin-right: 12px;
+    border-radius: 0% 50%;
+    
 }
 
 .about__paragraph {
+    grid-area: 2;
     line-height: 24px;
     padding-left: 5px;
     border-left: 5px solid rgb(241, 205, 0);
     border-radius: 0px;
-    margin-left: 100px;
+    margin: 16px 16px;
+    text-align: justify;
+    text-indent:32px;
 }
 
 .about__paragraph--color {
     color:rgb(241, 205, 0);
     border: none;
+    grid-area: 3;
+}
+
+.about__paragraph--pusty {
+    grid-area: 4;
+    margin: 16px;
 }
 
 /* W modelu BEM w HTML-u powtarzaemy nazwę elementu "about__paragraph", aby element podrzędny różnił się tylko wypisaną wartością (tu "color"), a resztę dziedziczył z elementu nadrzędnego, np. font-size. */
@@ -102,19 +120,44 @@ body {
     color: rgb(119, 101, 1);
 }
 
-.article {}
+.article {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
 
 .article__header {
     color: gray;
     font-size: 1.5em;
     line-height: 32px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
-.article__paragraph {}
+.article__paragraph {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
 
-.article__footer {}
+.article__footer {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
 
-.article__footer--photo {}
+.article__footer--photo {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-radius: 0% 50%;
+}
+
 
 .footer {
     display: block;
