@@ -11,8 +11,8 @@ html {
 /* normalizacja*/
 
 body {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(148deg, rgba(2, 0, 36, 1) 0%, rgba(131, 86, 177, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    background: white;
+    /*background: linear-gradient(148deg, rgba(2, 0, 36, 1) 0%, rgba(131, 86, 177, 1) 49%, rgba(0, 212, 255, 1) 100%);*/
     background-attachment: fixed;
     margin: 0;
 }
@@ -31,24 +31,25 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgba(116, 127, 179, 1);
+    background-color: gray;
 }
 
 .navigation__link {
-    font: 18px Sans lightgray;
+    font: 18px Sans black;
     text-align: center;
     text-decoration: none;
+    color: rgb(231, 231, 231);
     padding: 8px;
     flex-shrink: 1;
 }
 
 .navigation__link:hover {
-    color: antiquewhite;
-    background-color: #1460AA;
+    color:rgb(241, 205, 0);
+    background-color: rgb(56, 50, 50);
 }
 
 .main__header {
-    color: #7401DF;
+    color:gray;
     /* Nie stosować importanta. Ważność (specyficzność) identyfikatorów stylowania: !important, <style="">, #id, .class, element {parametr: nastawa;}    id do nawigacji, class do stylowania*/
     /* Aby stylować strony we wszystkich podkatalogach zastosuj składnię href="../style.css"*/
 }
@@ -58,7 +59,7 @@ body {
 }
 
 .about__header {
-    color: #8904B1;
+    color: gray;
 }
 
 .about_photo {
@@ -70,40 +71,43 @@ body {
 .about__paragraph {
     line-height: 24px;
     padding-left: 5px;
-    border-left: 5px solid red;
+    border-left: 5px solid rgb(241, 205, 0);
     border-radius: 0px;
     margin-left: 100px;
 }
 
 .about__paragraph--color {
-    color: aquamarine;
+    color:rgb(241, 205, 0);
     border: none;
 }
 
 /* W modelu BEM w HTML-u powtarzaemy nazwę elementu "about__paragraph", aby element podrzędny różnił się tylko wypisaną wartością (tu "color"), a resztę dziedziczył z elementu nadrzędnego, np. font-size. */
 
-.days {}
+.days {
+    color: gray;
+}
 
 .day__header {
-    color: #2E64FE;
+    color: black;
 }
 
 .day__paragraph {
     padding-left: 5px;
-    border-left: 5px solid red;
+    border-left: 5px solid rgb(241, 205, 0);
     border-radius: 0px;
     margin-left: 16px;
 }
 
 .day__link {
-    color: #0B0B61;
+    color: rgb(119, 101, 1);
 }
 
 .article {}
 
 .article__header {
-    color: #1460AA;
-    font-size: 1.5em
+    color: gray;
+    font-size: 1.5em;
+    line-height: 32px;
 }
 
 .article__paragraph {}
@@ -145,26 +149,27 @@ body {
     }
 }
 
-@media screen and (min-width: 150px) and (max-width: 960px) {
+@media screen and (min-width: 250px) and (max-width: 960px) {
     main {}
     .grid {
         grid-template-columns: 1fr;
     }
     .day__header {
-        color: yellowgreen;
-        font-size: 2em;
+        color: black;
+        font-size: 1.5em;
     }
     .menuButton__container {
-        background-color: rgba(116, 127, 179, 1);
+        background-color: rgb(83, 82, 82);
     }
     .menuButton {
-        color: lightgray;
+        color: white;
         border: none;
         background: none;
         font-size: 2em;
     }
     .navigation__base {
         display: none;
+        position: absolute;
     }
     .navigation__link {
         flex-shrink: 2;
@@ -176,6 +181,38 @@ body {
     }
 }
 
+@media screen and (min-width: 150px) and (max-width: 249px) {
+   
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .day__header {
+        color: gray;
+        font-size: 2em;
+    }
+    .menuButton__container {
+        background-color: rgb(83, 82, 82);
+    }
+    .menuButton {
+        color: lightgray;
+        border: none;
+        background: none;
+        font-size: 2em;
+    }
+   
+    .navigation__base {
+        display: none;
+        position: absolute;
+        width: 100vw;
+    }
+    .navigation__link {
+        flex-shrink: 2;
+    }
+    .navigation__mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /* Poniżej 655px wyświetlana będzie 1 kolumna zamiast dwóch - dostosowanie do nośnika = media (np. smartfon)*/

@@ -15,7 +15,7 @@ alert(`Nazywam się ${name} i mam ${age} lata.`); /* "``" oznacza literał i jeg
 /* Trzecia funkcja*/
 const pusty = document.querySelector('.about__paragraph--pusty, .about__paragraph--js');
 console.log(pusty.innerHTML);
-pusty.innerHTML = '<p style="font-size:25px; color:red;">Jestem akapitem, który się pojawia!!!</p>';
+pusty.innerHTML = '<p style="font-size:25px; color:gray;">Jestem akapitem, który się pojawia!!!</p>';
 
 /* Warunki*/
 
