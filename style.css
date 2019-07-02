@@ -56,6 +56,8 @@ body {
 
 .about {
     display: grid;
+    background: linear-gradient(148deg, rgba(113, 113, 116, 0.1) 0%, rgba(55, 50, 59, 0.1) 49%, rgba(194, 142, 0, 0.1) 100%);
+    border-radius: 0% 10%;
    
     
     
@@ -114,6 +116,7 @@ body {
     border-left: 5px solid rgb(241, 205, 0);
     border-radius: 0px;
     margin-left: 16px;
+    line-height: 24px;
 }
 
 .day__link {
@@ -167,7 +170,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
 }
